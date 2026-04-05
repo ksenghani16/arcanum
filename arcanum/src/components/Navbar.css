@@ -1,0 +1,101 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,7,5,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 68px;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+.logo span { font-weight: 600; font-style: normal; }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.nav-links a:hover { color: var(--gold); }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-btn {
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  padding: 0.45rem 1.1rem;
+  cursor: none;
+  transition: all var(--transition);
+  position: relative;
+}
+.cart-btn:hover { background: var(--gold); color: var(--bg); }
+
+.cart-count {
+  position: absolute;
+  top: -8px; right: -8px;
+  background: var(--red);
+  color: white;
+  font-size: 0.6rem;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.install-btn {
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  cursor: none;
+  transition: all var(--transition);
+}
+.install-btn:hover { background: var(--gold); color: var(--bg); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: none;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  width: 24px; height: 1px;
+  background: var(--gold);
+  display: block;
+  transition: transform var(--transition), opacity var(--transition);
+}
