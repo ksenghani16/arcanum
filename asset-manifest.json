@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arcanum/static/css/main.37477098.css",
+    "main.js": "/arcanum/static/js/main.b39d3368.js",
+    "index.html": "/arcanum/index.html",
+    "main.37477098.css.map": "/arcanum/static/css/main.37477098.css.map",
+    "main.b39d3368.js.map": "/arcanum/static/js/main.b39d3368.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37477098.css",
+    "static/js/main.b39d3368.js"
+  ]
+}
